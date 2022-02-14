@@ -1,0 +1,84 @@
+No spell correct. train auc: 0.98117 [ 0.97846484,  0.98218267,  0.9883258 ,  0.9866888 ,  0.98024052, 0.97113224]
+
+extended toxiclist, maxr=0.5, thres=300. train auc: 0.9802
+
+extended toxiclist, maxr=0.5, thres=50. train auc: 0.97598
+
+extended toxiclist, maxr=0.5, thres=30. train auc: 0.97728
+
+extended toxiclist, maxr=0.7, thres=30. train auc: 0.98087
+
+
+short toxiclist, maxr=0.5, thres=30. train auc: 0.97930
+
+short toxiclist, maxr=0.5, thres=100. train auc: 0.97769
+
+short toxiclist, maxr=0.6, thres=30. train auc: 0.98122
+
+short toxiclist, maxr=0.6, thres=100. train auc: 0.98074
+
+short toxiclist, maxr=0.6, thres=10. train auc: 0.981746
+
+
+min_df=1. No spell correct. train auc: 0.981995 [ 0.97797586,  0.98502672,  0.98895132,  0.98670687,  0.98115472,  0.97215708]
+
+min_df=1. short toxiclist, maxr=0.6, thres=10. train auc: 0.98244
+
+
+min_df=1. C=1. short toxiclist, maxr=0.6, thres=10. train auc: 0.982455
+
+min_df=1. C=2. short toxiclist, maxr=0.6, thres=10. train auc: 0.982311
+
+
+
+min_df=1. C=10. short toxiclist, maxr=0.6, thres=10. train auc: 0.981605
+
+
+No spell correct. min_df=3. C=4. ['caps_vs_length']. train auc: 0.981948
+
+No spell correct. min_df=3. C=4. ['caps_vs_length', 'num_exclamation_marks']. train auc: 0.98198
+
+No spell correct. min_df=3. C=4. ['caps_vs_length', 'num_exclamation_marks', 'words_vs_unique']. train auc: 0.981947
+
+No spell correct. min_df=3. C=4. ['caps_vs_length', 'num_exclamation_marks', 'num_unique_words']. train auc: 0.97967
+
+No spell correct. min_df=3. C=4. ['caps_vs_length', 'num_exclamation_marks', 'num_unique_words', 'count_sent']. train auc: 0.96908
+
+
+No spell correct. min_df=3, C=4, max_features = 20000. No feature adding. train auc: 0.97367
+
+No spell correct. min_df=3, C=4, no extra tokenizer. No feature adding. train auc: 0.980181
+
+
+
+analyzer='char', ngram_range=(2,6), max_features=30000, min_df=3, C=4, no extra tokenizer. No feature adding. train auc: 0.981392
+
+analyzer='char', ngram_range=(2,6), max_features=30000, stop_words='english', min_df=3, C=4, no extra tokenizer. No feature adding. train auc: 0.981392
+
+analyzer='char', ngram_range=(1,4), max_features=30000, min_df=3, C=4, no extra tokenizer. No feature adding. train auc: 0.982372 [ 0.97740383,  0.98614944,  0.99077806,  0.98240091,  0.98167011,  0.97583114]
+
+analyzer='word', ngram_range=(1,4), max_features=30000, min_df=3, C=4, no extra tokenizer. No feature adding. train auc: 0.971718
+
+analyzer='word', ngram_range=(1,3), max_features=50000, stop_words='english', min_df=3, C=4, no extra tokenizer. No feature adding. train auc: 0.967640
+
+analyzer='word', ngram_range=(1,3), max_features=50000, min_df=3, C=4, no extra tokenizer. No feature adding. train auc: 0.971647
+
+analyzer='word', ngram_range=(1,3), min_df=3, C=4, no extra tokenizer. No feature adding. train auc: 0.979784
+
+analyzer='word', ngram_range=(1,3), min_df=3, C=4, tokenizer. No feature adding. train auc: 0.980806
+
+analyzer='word', ngram_range=(1,3), min_df=2, C=4, tokenizer. No feature adding. train auc: 0.980793
+
+
+Orginal. except: alpha = 10. train auc: 0.980260
+
+Orginal. except: alpha = 0.1. train auc: 0.982757 [ 0.97788728,  0.98379455,  0.98818147,  0.99119981,  0.9799637 ,  0.97551939]
+
+Orginal. except: alpha = 1. feature ['spam']. train auc: 0.981289 [ 0.97875632,  0.98238472,  0.98837107,  0.98668895,  0.98026337,  0.97127226]
+
+Orginal. except: alpha = 0.1. feature ['spam']. train auc: 0.982793 [ 0.97818749,  0.98363263,  0.988181  ,  0.99120082,  0.97995018,  0.97560879]
+
+Orginal. except: alpha = 1. feature ['spam', 'num_words']. train auc: 0.979641 [ 0.97407919,  0.9814096 ,  0.98862639,  0.98876801, 0.97748243, 0.96748129]
+
+
+short toxiclist, maxr=0.6, thres=100. alpha = 0.1. ['spam'].train auc: 0.983142 [ 0.97764712,  0.98539098,  0.98917993,  0.99111253,  0.98036846,  0.97515847]

@@ -1,0 +1,12 @@
+crap removed
+only alphabets
+Train on 151592 samples, validate on 7979 samples
+Epoch 1/2
+ - 968s - loss: 0.0531 - acc: 0.9809 - val_loss: 0.0486 - val_acc: 0.9817
+
+ ROC-AUC - epoch: 1 - score: 0.984731 
+
+Epoch 2/2
+ - 955s - loss: 0.0400 - acc: 0.9845 - val_loss: 0.0469 - val_acc: 0.9820
+
+ ROC-AUC - epoch: 2 - score: 0.985667 
